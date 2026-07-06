@@ -386,7 +386,7 @@ function App() {
               <h2 className="section-title">競賽資訊</h2>
               <p className="section-desc">競賽對象與規則要點</p>
             </div>
-            <div className="news-container">
+            <div className="info-grid">
               <div className="news-card">
                 <h3 className="news-card-title" style={{ color: 'var(--primary-navy)', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
                   競賽規格說明
@@ -396,6 +396,19 @@ function App() {
                   <li><strong>組隊方式：</strong>{data.contestInfo.teamRule}（可設指導老師一名）</li>
                   <li><strong>程式語言：</strong>{data.contestInfo.languages}</li>
                   <li><strong>工作坊安排：</strong>{data.contestInfo.workshop}（提供程式能力與解題培訓）</li>
+                </ul>
+              </div>
+
+              <div className="news-card">
+                <h3 className="news-card-title" style={{ color: 'var(--primary-navy)', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
+                  獎項與獎金
+                </h3>
+                <ul className="bullet-list" style={{ marginTop: '15px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <li><strong>評選等級：</strong>本屆競賽將依競賽結果擇優頒發金獎、銀獎、銅獎及佳作若干名。</li>
+                  <li><strong>第一名 (金獎)：</strong>每隊可獲得新台幣 <strong>12,000 元</strong>之獎金</li>
+                  <li><strong>第二名 (銀獎)：</strong>每隊可獲得新台幣 <strong>9,000 元</strong>之獎金</li>
+                  <li><strong>第三名 (銅獎)：</strong>每隊可獲得新台幣 <strong>6,000 元</strong>之獎金</li>
+                  <li><strong>佳作組別 (五組)：</strong>每組可獲得新台幣 <strong>3,000 元</strong>之獎金</li>
                 </ul>
               </div>
             </div>
@@ -519,11 +532,11 @@ function App() {
                 <h4 className="map-box-title">Google 地圖導航</h4>
                 <div className="google-map-wrapper">
                   <iframe 
-                    src="https://maps.google.com/maps?q=靜宜大學+任垣樓&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    src="https://maps.google.com/maps?q=靜宜大學+主顧樓&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                     className="google-map-iframe"
                     allowFullScreen=""
                     loading="lazy"
-                    title="靜宜大學 任垣樓 Google 地圖"
+                    title="靜宜大學 主顧樓 Google 地圖"
                   ></iframe>
                 </div>
               </div>

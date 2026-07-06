@@ -12,19 +12,19 @@
   },
   "contestInfo": {
     "target": "全國高中(職)學生",
-    "teamRule": "每隊三位成員",
+    "teamRule": "每隊三位成員，預計錄取 40 支隊伍",
     "languages": "C/C++, JAVA, PYTHON, C#",
     "workshop": "8/24-8/25 競技程式工作坊"
   },
   "registration": {
     "period": "即日起 ~ 115年7月23日 (四) 止",
-    "formLink": "https://docs.google.com/forms/d/e/1FAIpQLScQRCODE_PLACEHOLDER/viewform",
+    "formLink": "https://docs.google.com/forms/d/1GsyM5ZwfFaYq0U7wP1TUmQebNoKNNRIjfisMiXbKJXo/viewform",
     "qrCodeUrl": "",
     "fee": "免費報名",
     "groups": [
       {
         "name": "高中職新星組",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLScQRCODE_PLACEHOLDER/viewform",
+        "link": "https://docs.google.com/forms/d/1GsyM5ZwfFaYq0U7wP1TUmQebNoKNNRIjfisMiXbKJXo/viewform",
         "status": "開放中"
       }
     ]
@@ -34,8 +34,8 @@
     "collegeEmail": "pu20700@gm.pu.edu.tw",
     "phone": "(04)26328001 轉 18001 , 18007",
     "address": "43301 台中市沙鹿區台灣大道七段200號",
-    "locationName": "靜宜大學 資訊處 任垣樓 任120",
-    "office": "任垣樓 任120"
+    "locationName": "靜宜大學 資訊處 主顧樓電腦教室",
+    "office": "主顧樓電腦教室"
   },
   "organizers": [
     {
@@ -98,25 +98,37 @@
   },
   "schedule": [
     {
-      "date": "8/24 (一) - 8/25 (二)",
-      "title": "競技程式工作坊",
+      "date": "8/24 (一)",
+      "title": "競技程式工作坊 (第一天)",
       "items": [
-        { "time": "09:00 - 12:00", "event": "基礎演算法與資料結構課程" },
-        { "time": "12:00 - 13:30", "event": "午餐與休息時間" },
-        { "time": "13:30 - 16:30", "event": "競賽模擬題解題與上機實作" }
+        { "time": "08:30-09:00", "event": "報到" },
+        { "time": "09:00-12:00", "event": "程式小學堂" },
+        { "time": "12:00-13:00", "event": "午休" },
+        { "time": "13:00-16:00", "event": "解題小尖兵" }
       ]
     },
     {
-      "date": "8/26 (三) 競賽當日",
-      "title": "全國高中職程式設計競賽",
+      "date": "8/25 (二)",
+      "title": "競技程式工作坊 (第二天)",
       "items": [
-        { "time": "08:30 - 09:00", "event": "參賽隊伍報到與座位抽籤" },
-        { "time": "09:00 - 09:30", "event": "開幕典禮 & 競賽規則與環境介紹" },
-        { "time": "09:30 - 10:00", "event": "測試賽 (Trial Session) - 熟悉評測系統與編譯環境" },
-        { "time": "10:00 - 13:00", "event": "正式競賽 (Contest Session) - 3小時上機解題" },
-        { "time": "13:00 - 14:00", "event": "主辦單位提供午餐交流與成績封榜統計" },
-        { "time": "14:00 - 15:00", "event": "競賽題目詳解與解題報告" },
-        { "time": "15:00 - 15:30", "event": "頒獎典禮 (頒發冠、亞、季軍及佳作獎狀與獎金) & 閉幕" }
+        { "time": "09:00-12:00", "event": "競技大反攻" },
+        { "time": "12:00-13:00", "event": "午休" },
+        { "time": "13:00-16:00", "event": "程式競技模擬排名賽" }
+      ]
+    },
+    {
+      "date": "8/26 (三)",
+      "title": "全國高中職程式設計競賽 (競賽當日)",
+      "items": [
+        { "time": "09:00-09:30", "event": "報到" },
+        { "time": "09:30-10:00", "event": "開幕式與賽前說明" },
+        { "time": "10:10-11:00", "event": "環境測試" },
+        { "time": "11:10-12:00", "event": "午休與環境重置 (供便當)" },
+        { "time": "12:00-12:30", "event": "入場與身份查驗 (採團體查驗)" },
+        { "time": "12:30-16:30", "event": "競賽時間" },
+        { "time": "16:30-16:50", "event": "評審會議" },
+        { "time": "16:50-17:30", "event": "頒獎典禮" },
+        { "time": "17:30～", "event": "賦歸" }
       ]
     }
   ],

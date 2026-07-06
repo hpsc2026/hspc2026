@@ -646,6 +646,18 @@
   gap: 20px;
 }
 
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .news-card {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
