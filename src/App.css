@@ -1,12 +1,12 @@
 /* Navbar / Header */
 .header {
-  background-color: var(--primary-navy);
+  background-color: var(--accent-orange);
   color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  border-bottom: 2px solid var(--accent-gold);
+  border-bottom: 2px solid var(--primary-navy);
 }
 
 .header-container {
@@ -77,8 +77,8 @@
 }
 
 .nav-link:hover {
-  color: var(--accent-gold);
-  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--primary-navy);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .nav-link.active {
@@ -93,7 +93,7 @@
   left: 12px;
   right: 12px;
   height: 3px;
-  background-color: var(--accent-gold);
+  background-color: var(--primary-navy);
   border-radius: 2px;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .nav-search:hover {
-  color: var(--accent-gold);
+  color: var(--primary-navy);
 }
 
 /* Dropdown Menu */
@@ -122,7 +122,7 @@
   left: 0;
   background-color: var(--primary-navy);
   border: 1px solid var(--border-color);
-  border-top: 2px solid var(--accent-gold);
+  border-top: 2px solid var(--primary-navy);
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   box-shadow: var(--shadow-lg);
   min-width: 150px;
@@ -1255,7 +1255,7 @@
     top: var(--nav-height);
     left: 0;
     width: 100%;
-    background-color: var(--primary-navy);
+    background-color: var(--accent-orange);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1288,7 +1288,7 @@
     box-shadow: none;
     background-color: var(--secondary-navy);
     border: none;
-    border-left: 4px solid var(--accent-gold);
+    border-left: 4px solid var(--primary-navy);
     padding-left: 12px;
   }
   

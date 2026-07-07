@@ -69,7 +69,7 @@ function App() {
           <nav>
             <ul className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}
                   onClick={() => scrollToSection('home')}
                 >
@@ -77,17 +77,17 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'news' ? 'active' : ''}`}
                   onClick={() => scrollToSection('news')}
                 >
                   最新消息
                 </span>
               </li>
-              
+
               {/* Registration Dropdown */}
               <li className={`nav-dropdown ${isRegDropdownOpen ? 'open-mobile' : ''}`}>
-                <span 
+                <span
                   className="nav-link"
                   onClick={() => {
                     if (window.innerWidth <= 768) {
@@ -110,7 +110,7 @@ function App() {
               </li>
 
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'info' ? 'active' : ''}`}
                   onClick={() => scrollToSection('info')}
                 >
@@ -118,7 +118,7 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'environment' ? 'active' : ''}`}
                   onClick={() => scrollToSection('environment')}
                 >
@@ -126,7 +126,7 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'schedule' ? 'active' : ''}`}
                   onClick={() => scrollToSection('schedule')}
                 >
@@ -134,7 +134,7 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'past-problems' ? 'active' : ''}`}
                   onClick={() => scrollToSection('past-problems')}
                 >
@@ -142,7 +142,7 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'location' ? 'active' : ''}`}
                   onClick={() => scrollToSection('location')}
                 >
@@ -150,7 +150,7 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'faq' ? 'active' : ''}`}
                   onClick={() => scrollToSection('faq')}
                 >
@@ -158,14 +158,14 @@ function App() {
                 </span>
               </li>
               <li>
-                <span 
+                <span
                   className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
                   onClick={() => scrollToSection('contact')}
                 >
                   聯絡資訊
                 </span>
               </li>
-              
+
               {/* Search Toggle in navbar */}
               <li>
                 <div className="nav-search" onClick={() => setIsSearchOpen(true)}>
@@ -191,11 +191,11 @@ function App() {
 
       <main>
         {/* Hero Section */}
-        <section 
-          id="home" 
+        <section
+          id="home"
           className="hero fade-in"
-          style={{ 
-            backgroundImage: `linear-gradient(to right, rgba(10, 37, 64, 0.15), rgba(10, 37, 64, 0.5)), url(${data.contest.bannerBg})` 
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(10, 37, 64, 0.15), rgba(10, 37, 64, 0.5)), url(${data.contest.bannerBg})`
           }}
         >
           <div className="hero-content">
@@ -204,7 +204,7 @@ function App() {
               <span>{data.contest.year}</span> {data.contest.title}
             </h1>
             <div className="hero-subtitle">{data.contest.englishTitle}</div>
-            <div className="hero-tag">PUPC / HSPC {data.contest.year}</div>
+            <div className="hero-tag">HSPC {data.contest.year}</div>
             <div className="hero-date-badge">競賽日期：{data.contest.dateDisplay}</div>
           </div>
         </section>
@@ -212,7 +212,7 @@ function App() {
         {/* Two-Column Home Main Area */}
         <section className="home-section">
           <div className="container grid-layout">
-            
+
             {/* Left Column: Purpose & Details */}
             <div className="info-card">
               <div className="info-item">
@@ -229,11 +229,11 @@ function App() {
                     <div className="registration-header">線上組隊報名：</div>
                     <div className="registration-buttons">
                       {data.registration.groups.map((group, index) => (
-                        <a 
+                        <a
                           key={index}
-                          href={group.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                          href={group.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="btn btn-accent"
                         >
                           {group.name} [立即報名]
@@ -296,7 +296,7 @@ function App() {
                 ))}
               </div>
             </div>
-            
+
           </div>
         </section>
 
@@ -363,10 +363,10 @@ function App() {
                   </h3>
                   <p className="news-content">{item.content}</p>
                   {item.url && (
-                    <a 
-                      href={item.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn btn-primary"
                       style={{ display: 'inline-flex', padding: '6px 12px', fontSize: '0.8rem', marginTop: '12px' }}
                     >
@@ -412,6 +412,39 @@ function App() {
                 </ul>
               </div>
             </div>
+
+            <div className="info-rules" style={{ marginTop: '30px' }}>
+              <div className="news-card">
+                <h3 className="news-card-title" style={{ color: 'var(--primary-navy)', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
+                  詳細競賽規則
+                </h3>
+                <ol className="rules-list" style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '16px', paddingLeft: '0', listStyle: 'none' }}>
+                  {data.rules && data.rules.map((rule, idx) => (
+                    <li key={idx} style={{ display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
+                      <span style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        backgroundColor: 'var(--primary-navy)',
+                        color: 'white',
+                        borderRadius: '50%',
+                        width: '28px',
+                        height: '28px',
+                        minWidth: '28px',
+                        fontSize: '0.9rem',
+                        fontWeight: 'bold',
+                        marginTop: '2px'
+                      }}>
+                        {idx + 1}
+                      </span>
+                      <span style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.6' }}>
+                        {rule}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -422,7 +455,7 @@ function App() {
               <h2 className="section-title">競賽環境</h2>
               <p className="section-desc">上機編譯器與編輯器規格</p>
             </div>
-            
+
             <div className="env-grid">
               {data.environment.compilers.map((comp, idx) => (
                 <div key={idx} className="env-card">
@@ -456,7 +489,7 @@ function App() {
               <h2 className="section-title">競賽行程</h2>
               <p className="section-desc">工作坊與競賽當日時間安排</p>
             </div>
-            
+
             <div className="schedule-container">
               {data.schedule.map((day, idx) => (
                 <div key={idx} className="schedule-day-block">
@@ -485,15 +518,15 @@ function App() {
               <h2 className="section-title">歷屆考題</h2>
               <p className="section-desc">提供歷屆程式設計競賽題目參考</p>
             </div>
-            
+
             <div className="past-list-container">
               <ul className="past-list">
                 {data.pastProblems.map((prob, idx) => (
                   <li key={idx} className="past-item">
-                    <a 
-                      href={prob.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={prob.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="past-item-link"
                     >
                       {prob.title}
@@ -512,7 +545,7 @@ function App() {
               <h2 className="section-title">活動地點</h2>
               <p className="section-desc">靜宜大學校區與考場位置</p>
             </div>
-            
+
             <div className="location-info-block">
               <h3 className="location-subtitle">靜宜大學</h3>
               <p className="location-address">{data.contact.address}</p>
@@ -531,8 +564,8 @@ function App() {
               <div className="location-map-box">
                 <h4 className="map-box-title">Google 地圖導航</h4>
                 <div className="google-map-wrapper">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=靜宜大學+主顧樓&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  <iframe
+                    src="https://maps.google.com/maps?q=靜宜大學+主顧樓&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     className="google-map-iframe"
                     allowFullScreen=""
                     loading="lazy"
@@ -544,7 +577,7 @@ function App() {
 
             <div className="traffic-guide-section">
               <h3 className="traffic-guide-title">如何到靜宜 (交通資訊)</h3>
-              
+
               <div className="traffic-grid">
                 {/* 自行開車 */}
                 <div className="traffic-card-modern">
@@ -644,7 +677,7 @@ function App() {
               <h2 className="section-title">常見問題 Q&A</h2>
               <p className="section-desc">解答您參賽或報名的各種疑慮</p>
             </div>
-            
+
             <div className="faq-container">
               {data.faq && data.faq.length > 0 ? (
                 data.faq.map((item, idx) => (
@@ -679,7 +712,7 @@ function App() {
                 有任何關於本競賽之問題，均歡迎以官方信箱或電話連繫，我們將竭誠為您服務。
               </p>
             </div>
-            
+
             <div style={{ maxWidth: '600px', margin: '0 auto' }}>
               <div className="contact-card">
                 <div className="contact-method">
@@ -744,7 +777,7 @@ function App() {
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', alignItems: 'center' }}>
               <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--primary-navy)' }}>站內搜尋</h3>
-              <button 
+              <button
                 onClick={() => setIsSearchOpen(false)}
                 style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: 'var(--text-light)' }}
               >
@@ -752,8 +785,8 @@ function App() {
               </button>
             </div>
             <form onSubmit={handleSearchSubmit}>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder="請輸入關鍵字（例如：工作坊、編譯器、報名）"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -769,10 +802,10 @@ function App() {
                 autoFocus
               />
               <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px' }}>
-                <button 
-                  type="button" 
+                <button
+                  type="button"
                   onClick={() => setIsSearchOpen(false)}
-                  className="btn" 
+                  className="btn"
                   style={{ backgroundColor: 'var(--bg-tertiary)', color: 'var(--text-primary)' }}
                 >
                   取消

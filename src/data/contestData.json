@@ -14,7 +14,7 @@
   "contestInfo": {
     "target": "全國高中(職)學生",
     "teamRule": "每隊三位成員，預計錄取 40 支隊伍",
-    "languages": "C/C++, JAVA, PYTHON, C#",
+    "languages": "C/C++, Java, Python",
     "workshop": "8/24-8/25 競技程式工作坊"
   },
   "registration": {
@@ -24,16 +24,16 @@
     "fee": "免費報名",
     "groups": [
       {
-        "name": "高中職新星組",
+        "name": "高中職組",
         "link": "https://docs.google.com/forms/d/1GsyM5ZwfFaYq0U7wP1TUmQebNoKNNRIjfisMiXbKJXo/viewform",
         "status": "開放中"
       }
     ]
   },
   "contact": {
-    "email": "pu20700@gm.pu.edu.tw",
+    "email": "yjchang3@pu.edu.tw",
     "collegeEmail": "pu20700@gm.pu.edu.tw",
-    "phone": "(04)26328001 轉 18001 , 18007",
+    "phone": "(04)26328001 轉 18021 , 18022",
     "address": "43301 台中市沙鹿區台灣大道七段200號",
     "locationName": "靜宜大學 資訊處 主顧樓電腦教室",
     "office": "主顧樓電腦教室"
@@ -84,10 +84,12 @@
   "environment": {
     "os": "Windows 11 / Ubuntu Linux 22.04 LTS Dual Boot",
     "compilers": [
-      { "name": "C/C++", "detail": "GCC / G++ 13.2.0 (MinGW-w64 / GCC in Linux)" },
+      {
+        "name": "C/C++",
+        "detail": "GCC / G++ 13.2.0 (MinGW-w64 / GCC in Linux)"
+      },
       { "name": "Java", "detail": "OpenJDK 21 (LTS)" },
-      { "name": "Python", "detail": "Python 3.12.x (含 standard libraries)" },
-      { "name": "C#", "detail": ".NET SDK 8.0" }
+      { "name": "Python", "detail": "Python 3.12.x (含 standard libraries)" }
     ],
     "editors": [
       "Visual Studio Code (已安裝 C/C++, Extension Pack for Java, Python 延伸模組)",
@@ -179,6 +181,16 @@
       "title": "第十四屆 全國私立大專校院程式競賽 2024 考題",
       "link": "https://drive.google.com/file/d/19WSPjQPFF0tXCylnd9lYumM1W4x3CUPj/view"
     }
+  ],
+  "rules": [
+    "競賽試題以英文命題（評判系統提供線上英漢字典），試題至少 7 題。",
+    "競賽時間以4小時為原則；如遇特殊狀況，承辦單位得延長或縮短競賽時間。",
+    "解題語言為：C/C++、Java、Python。",
+    "本競賽採用ICPC的評分方式，參賽隊伍以答對的題數及答對題目耗費的時間總和作為評定名次的主要依據。（答對題目耗費的時間總和，為競賽開始至送繳答案所經過的時間，再加上該題已送繳且被評審為錯誤的次數乘以 20 分鐘，答錯的題目所耗費之時間不計）。",
+    "競賽透過網路連線即時公佈成績，但是在競賽結束前1小時得停止對外公佈成績。",
+    "輸入與輸出資料全為純文字資料，每個輸入資料可能包含多組測試資料，程式必需一一讀取測試資料，並依規定，將結果輸出。",
+    "每隊使用 1 部電腦，機器需於測試時間內測試完畢。",
+    "本比賽規則若有未盡事宜，得由承辦單位視實際狀況酌情處理之。"
   ],
   "faq": []
 }
