@@ -437,7 +437,7 @@ function App() {
                       }}>
                         {idx + 1}
                       </span>
-                      <span style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.6' }}>
+                      <span style={{ color: '#dc2626', fontSize: '1rem', lineHeight: '1.6' }}>
                         {rule}
                       </span>
                     </li>
